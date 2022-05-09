@@ -1,0 +1,60 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+    <h1>Text shadow generator</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-4 col-md-6">
+        <div class="card">
+          <div class="card-header bg-primary">Options:</div>
+          <div class="card-body">
+            <label for="font_size">Font size</label>
+            <input type="range" id="font_size" class="custom-range" min="8" max="40" step="1" value="40">
+            <label for="offset_x">Offset Х</label>
+            <input type="range" id="offset_x" class="custom-range" min="-15" max="15" step="1" value="4">
+            <label for="offset_y">Offset Y</label>
+            <input type="range" id="offset_y" class="custom-range" min="-15" max="15" step="1" value="-1">
+            <label for="blur">Blur</label>
+            <input type="range" id="blur" class="custom-range" min="0" max="15" step="1" value="0">
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="card">
+          <div class="card-header bg-primary">Color:</div>
+          <div class="card-body">
+            <input type="color" value="#ff0000">
+            <label for="opacity">Opacity</label>
+            <input type="range" class="custom-range" id="opacity" min="0" max="1" step="0.01" value="1">
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 col-md-6">
+        <div class="card">
+          <div class="card-header bg-primary">Result:</div>
+          <div class="card-body">
+           <button type="button" class="btnHex btn btn-outline-primary">copy</button>
+            <label for="resultHex">HEX color</label>
+            <textarea id="resultHex" cols="30" rows="4" readonly></textarea><br>
+             <button type="button" class="btnRgba btn btn-outline-primary">copy</button>
+             <label for="resultRgba">RGBA color</label>
+            <textarea id="resultRgba" cols="30" rows="3" readonly></textarea><br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+body{
+  text-align: center;
+  background-color: #eee !important;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+label {
+  display: block !important; /* bootstrap ignore*/
+  margin: 10px;
+}
+h1{
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 6px;
+  font-size: 40px;
+  color: #000;
+  margin: 50px !important; /* bootstrap ignore*/
+}
+input[type="range"]{
+  width: 100%;
+}
+input[type="color"]{
+ border: none;
+ background-color: transparent;
+  width: 55px;
+  height: 55px;
+  padding: 0;
+  margin-bottom: 15px;
+}
+textarea{
+  width: 100%;
+  resize: none !important; /* bootstrap ignore*/
+  margin-bottom: 15px;
+  min-width: 300px;
+  font-size: 13px;
+}
+.card{
+  height: 100%;
+}
+.card-header{
+  font-weight: bold;
+  color: #fff;
+}
+.row > div{
+  margin-bottom: 25px;
+}
+button{
+  position: absolute;
+  right: 16px;
+}
